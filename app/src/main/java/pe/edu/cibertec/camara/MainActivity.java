@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
                 File file = new File(currentPathImage);
+                Toast.makeText(MainActivity.this, currentPathImage, Toast.LENGTH_LONG).show();
                 Uri contentUri = Uri.fromFile(file);
                 intent.setData(contentUri);
                 MainActivity.this.sendBroadcast(intent);
