@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Camara</string>
+    <string name="bt_camera">Take Picture</string>
+    <string name="bt_gallery">Add to gallery</string>
 </resources>
